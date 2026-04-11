@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
+import { BookContext } from "../../context/BookProvider";
 
 const BookDetails = () => {
   const { id } = useParams();
@@ -16,6 +17,7 @@ const BookDetails = () => {
   }
 
   const {
+    bookId,
     bookName,
     author,
     image,
@@ -27,6 +29,9 @@ const BookDetails = () => {
     publisher,
     yearOfPublishing,
   } = book;
+
+  const { handleMarkAsRead, storedBook } = useContext(BookContext);
+  console.log(handleMarkAsRead, storedBook);
 
   return (
     <div className="min-h-screen bg-[#0A071E] py-12 lg:py-24">
@@ -107,7 +112,10 @@ const BookDetails = () => {
             </div>
 
             {/* Actions */}
-            <div className="flex flex-wrap items-center gap-4">
+            <div
+              onClick={() => handleMarkAsRead(book)}
+              className="flex flex-wrap items-center gap-4"
+            >
               <button className="px-8 py-3.5 rounded-xl bg-white text-[#0A071E] font-bold text-lg hover:bg-white/90 transition-all active:scale-95 shadow-lg shadow-white/5">
                 Read
               </button>

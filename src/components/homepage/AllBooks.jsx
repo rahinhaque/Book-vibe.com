@@ -15,7 +15,7 @@ const AllBooks = () => {
       book.author?.toLowerCase().includes(q) ||
       book.category?.toLowerCase().includes(q)
     );
-  })
+  });
 
   return (
     <div className="w-full bg-[#0A071E] py-20">
