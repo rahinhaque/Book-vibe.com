@@ -68,7 +68,7 @@ To get a local copy up and running, follow these simple steps:
 
 ## 📬 Contact
 
-Project Link: [https://github.com/your-username/book-vibe](https://github.com/your-username/book-vibe)
+Project Link: [https://github.com/rahinhaque/Book-vibe.com](https://github.com/rahinhaque/Book-vibe.com)
 
 ---
 *Developed with passion for the reading community.*
