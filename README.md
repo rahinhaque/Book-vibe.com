@@ -9,7 +9,7 @@
 
 ## 🔗 Live Project
 Experience the application live here:  
-👉 **[Live Demo: Book Vibe](https://stalwart-nougat-f51977.netlify.app/books)**
+👉 **[Live Demo: Book Vibe](https://stalwart-nougat-f51977.netlify.app/)**
 
 ---
 
@@ -53,7 +53,7 @@ To get a local copy up and running, follow these simple steps:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/book-vibe.git
+   git clone https://github.com/rahinhaque/Book-vibe.com
    ```
 2. **Install NPM packages**
    ```bash
